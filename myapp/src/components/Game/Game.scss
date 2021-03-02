@@ -1,0 +1,27 @@
+.game {
+  margin-top: 50px;
+  width: 60%;
+  height: 70vh;
+  display: flex;
+
+  &__table {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(25, 1fr);
+    grid-gap: 0;
+    height: 100%;
+  }
+
+  &__table-cell {
+    margin: 0;
+    padding: 0;
+    width: 25px;
+    height: 20px;
+    border: 1px dotted black;
+  }
+
+  &__score {
+    width: 20%;
+    height: 100%;
+  }
+}

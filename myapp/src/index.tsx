@@ -2,15 +2,16 @@ import { StrictMode } from 'react';
 import { render } from 'react-dom';
 
 import './index.scss';
-import App from './App';
+import Footer from './components/Footer/Footer';
+import Game from './components/Game/Game';
 import reportWebVitals from './reportWebVitals';
-
-const a = 5;
-const b = 10;
 
 render(
   <StrictMode>
-    <App />
+    <div className="content">
+      <Game />
+      <Footer />
+    </div>
   </StrictMode>,
   document.getElementById('root')
 );
